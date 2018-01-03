@@ -1,1 +1,7 @@
-﻿
+﻿<Login
+
+Campo usuario: usuarioLogin
+Campo clave: claveLogin
+Boton Login: btnLogin
+
+Login>

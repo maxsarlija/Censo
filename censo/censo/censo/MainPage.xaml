@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:censo"
-             x:Class="censo.MainPage">
+             x:Class="censo.MainPage"
+             BackgroundImage="backgroundLogin.jpg">
+    
+    <StackLayout VerticalOptions="Center">
+	
+    <Image Source="logoLogin.png" />
+        
+        <StackLayout VerticalOptions="Center" BackgroundColor="White" Margin="50">
+            <Entry x:Name="usuarioLogin" Placeholder="Ingrese Usuario" TextColor="Black" PlaceholderColor="Black"/>
+            <Entry x:Name="claveLogin" Placeholder="Ingrese Clave" TextColor="Black" PlaceholderColor="Black"/>
+        </StackLayout>
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <Button Clicked="btnLogin" Text="Login" Margin="50"/>
+    </StackLayout>
+    
 </ContentPage>
