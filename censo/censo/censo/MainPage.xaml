@@ -5,16 +5,13 @@
              x:Class="censo.MainPage"
              BackgroundImage="backgroundLogin.jpg">
     
-    <StackLayout VerticalOptions="Center">
-	
-    <Image Source="logoLogin.png" />
-        
-        <StackLayout VerticalOptions="Center" BackgroundColor="White" Margin="50">
-            <Entry x:Name="usuarioLogin" Placeholder="Ingrese Usuario" TextColor="Black" PlaceholderColor="Black"/>
-            <Entry x:Name="claveLogin" Placeholder="Ingrese Clave" TextColor="Black" PlaceholderColor="Black"/>
-        </StackLayout>
-
-    <Button Clicked="btnLogin" Text="Login" Margin="50"/>
-    </StackLayout>
     
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="White"  Orientation="Vertical">
+        <Image Source="userLogin.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+        <Entry  TextColor="Black" Placeholder=" Username" HorizontalOptions="StartAndExpand" HeightRequest="35" PlaceholderColor="Black"/>
+
+        <Image Source="claveLogin.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center"/>
+        <Entry IsPassword="true"  TextColor="Black" Placeholder=" Password" HorizontalOptions="StartAndExpand" HeightRequest="35" PlaceholderColor="Black"/>
+        </StackLayout>
 </ContentPage>
