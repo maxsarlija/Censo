@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="backgroundLogin.jpg" />
+    <None Remove="Vistas\Login\btnlogin.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Vistas\Login\btnlogin.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
 
@@ -19,7 +28,6 @@
 
   <ItemGroup>
     <Folder Include="Clases\" />
-    <Folder Include="Vistas\Login\" />
   </ItemGroup>
 
   <ItemGroup>

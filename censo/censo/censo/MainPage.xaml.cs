@@ -13,10 +13,6 @@ namespace censo
 		{
 			InitializeComponent();
 		}
-
-        async void btnLogin(object sender, EventArgs e)
-        {
-
-        }
+        
 	}
 }
