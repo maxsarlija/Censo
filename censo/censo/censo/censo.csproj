@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Folder Include="Clases\" />
+    <Folder Include="Vistas\Login\" />
   </ItemGroup>
 
   <ItemGroup>

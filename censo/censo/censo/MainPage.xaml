@@ -7,11 +7,16 @@
     
     
 
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="White"  Orientation="Vertical">
-        <Image Source="userLogin.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
-        <Entry  TextColor="Black" Placeholder=" Username" HorizontalOptions="StartAndExpand" HeightRequest="35" PlaceholderColor="Black"/>
+    <StackLayout Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" WidthRequest="300" BackgroundColor="White"  Orientation="Vertical">
 
-        <Image Source="claveLogin.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center"/>
-        <Entry IsPassword="true"  TextColor="Black" Placeholder=" Password" HorizontalOptions="StartAndExpand" HeightRequest="35" PlaceholderColor="Black"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <Image Source="userLogin.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+            <Entry  TextColor="Black" Placeholder=" Username" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" PlaceholderColor="Black"/>
         </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="claveLogin.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center"/>
+            <Entry IsPassword="true"  TextColor="Black" Placeholder=" Password" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" PlaceholderColor="Black"/>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
