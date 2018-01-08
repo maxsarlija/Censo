@@ -3,10 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="censo.Vistas.inicio">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Center">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="checked.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Button Text="Tareas" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="nuevocenso.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Button Text="Nuevo Censo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="editarcenso.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Button Text="Editar Censo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="sincronizaronline.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Button Text="Sincronizar Online" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image Source="mapa.png"  WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Button Text="Mapa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
