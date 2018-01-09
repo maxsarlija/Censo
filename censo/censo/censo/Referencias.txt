@@ -5,3 +5,5 @@ Campo clave: claveLogin
 Boton Login: btnLogin
 
 Login>
+Plugin para popup instalado
+https://www.nuget.org/packages/Rg.Plugins.Popup/

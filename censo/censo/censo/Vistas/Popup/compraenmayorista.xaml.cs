@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace censo.Vistas
+namespace censo.Vistas.Popup
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class inicio : ContentPage
+	public partial class compraenmayorista : ContentPage
 	{
-		public inicio ()
+		public compraenmayorista ()
 		{
 			InitializeComponent ();
 		}
-
-        async void nuevoCenso(object sender, EventArgs e){
-
-            await Navigation.PushAsync(new Vistas.Inicio.nuevoCenso());
-        }
-}
+	}
 }

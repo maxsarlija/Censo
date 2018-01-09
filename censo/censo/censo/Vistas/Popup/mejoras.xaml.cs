@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace censo.Vistas
+namespace censo.Vistas.Popup
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class nuevocenso : ContentPage
+	public partial class mejoras : ContentPage
 	{
-		public nuevocenso ()
+		public mejoras ()
 		{
 			InitializeComponent ();
 		}

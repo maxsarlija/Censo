@@ -14,5 +14,9 @@ namespace censo
 			InitializeComponent();
 		}
         
+        async void loginClick(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new Vistas.inicio());
+        }
 	}
 }

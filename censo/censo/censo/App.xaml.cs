@@ -13,7 +13,7 @@ namespace censo
 		{
 			InitializeComponent();
 
-			MainPage = new censo.MainPage();
+			MainPage = new NavigationPage(new censo.MainPage());
 		}
 
 		protected override void OnStart ()

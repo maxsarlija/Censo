@@ -3,29 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="censo.Vistas.inicio">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
+        <StackLayout VerticalOptions="Center" Padding="50">
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
                 <Image Source="checked.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
                 <Button Text="Tareas" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         </StackLayout>
-            
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
                 <Image Source="nuevocenso.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
-                <Button Text="Nuevo Censo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                <Button Text="Nuevo Censo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Clicked="nuevoCenso"/>
             </StackLayout>
-            
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
                 <Image Source="editarcenso.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
                 <Button Text="Editar Censo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             </StackLayout>
-            
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
                 <Image Source="sincronizaronline.png" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
                 <Button Text="Sincronizar Online" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
             </StackLayout>
-            
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
                 <Image Source="mapa.png"  WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Center" />
                 <Button Text="Mapa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             </StackLayout>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="censo.Vistas.Popup.tieneProductos">
+    <StackLayout VerticalOptions="Center">
+
+        <Label Text="Tiene Productos" HorizontalOptions="Center" FontAttributes="Bold"/>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="0"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="0"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="0"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="1"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="1"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="1"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="2"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="2"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="2"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="3"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="3"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="3"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="4"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="4"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="4"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="5"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="5"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="5"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="6"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="6"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="6"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="6"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="6"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="6"/>
+
+            <Entry Placeholder="Producto" Grid.Column="0" Grid.Row="7"/>
+            <Entry Placeholder="Precio" Grid.Column="1" Grid.Row="7"/>
+            <Entry Placeholder="Quien los provee" Grid.Column="2" Grid.Row="7"/>
+
+        </Grid>
+        <Button Text="OK" HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>
