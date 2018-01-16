@@ -2,8 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="censo.Vistas.Popup.mejoras">
-    <ContentPage.Content>
-   
-        
-    </ContentPage.Content>
+    <StackLayout VerticalOptions="Center">
+            <Label Text="MEJORAS" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Mejora 1?" HorizontalTextAlignment="Center" Margin="20"/>
+            <Entry Placeholder="Mejora 2?" HorizontalTextAlignment="Center" Margin="20"/>
+            <Entry Placeholder="Mejora 3" HorizontalTextAlignment="Center" Margin="20"/>
+            <Button Text="Ok" Margin="60"/>
+    </StackLayout>
+
 </ContentPage>

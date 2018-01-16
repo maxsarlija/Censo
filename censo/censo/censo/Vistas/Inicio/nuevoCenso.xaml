@@ -1,18 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="censo.Vistas.Inicio.nuevoCenso">
+             x:Class="censo.Vistas.Inicio.nuevoCenso"
+             BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout Margin="50">
-            
-            <DatePicker HorizontalOptions="Center" />
-            
-            <Entry Placeholder="Ingrese Zona" HorizontalOptions="Center"/>
-            
-            <Entry Placeholder="Ingrese Direccion" HorizontalOptions="Center"/>
-            
-            <Picker x:Name="pickerPDV" Title="Tipo de PDV" HorizontalOptions="Center">
-                <Picker.ItemsSource>
+        <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+            <!-- Menu con Fecha-->
+            <StackLayout BackgroundColor="DarkOrange">
+                <StackLayout  
+                    BackgroundColor="DarkOrange"
+                    Orientation="Horizontal" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="FillAndExpand">
+
+                    <Image Source="calendar.png" 
+                           WidthRequest="25" 
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center" />
+                    
+                    <DatePicker Format="dd-MM-yyyy"  
+                                HorizontalOptions="FillAndExpand" 
+                                VerticalOptions="FillAndExpand"
+                                InputTransparent="True"/>
+                
+                </StackLayout>
+                <!--  Fin Menu con Fecha-->
+                
+            </StackLayout>
+
+            <!-- Zona esto deberia mostrar un popup para un entry -->
+            <Button Text="ZONA"
+                    BackgroundColor="#2c353e"
+                    TextColor="White"
+                    />
+
+            <!-- Direccion deberia mostrar un popup para un entry-->
+            <Button Text="DIRECCION"
+                    BackgroundColor="#2c353e"
+                    TextColor="White"/>
+
+            <!-- Tipo de PDV-->
+            <Picker x:Name="pickerPDV" Title="TIPO DE PDV">
+               <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Autoservicio</x:String>
                         <x:String>Almacen</x:String>
@@ -25,8 +55,9 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            
-            <Picker x:Name="pickerEntrada" Title="Entrada" HorizontalOptions="Center">
+
+            <!-- Tipo de entrada-->
+            <Picker x:Name="pickerEntrada" Title="ENTRADA" >
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Plotter</x:String>
@@ -36,7 +67,8 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Picker x:Name="pickerDestino" Title="Zona Destino" HorizontalOptions="Center">
+            <!-- Zona destino -->
+            <Picker  x:Name="pickerDestino" Title="ZONA DESTINO">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Exibidor</x:String>
@@ -46,15 +78,45 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Button Text="Compra en mayorista?" Clicked="btnCompraenMayorista"/>
+            <!-- Boton compra en mayorista-->
+            <Image Source="compraenmayorista.png" Scale="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="btnCompraenMayorista"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
 
-            <Button Text="Tiene productos nevares?" HorizontalOptions="Center" Clicked="btnTieneproductos"/>
+            <!-- Boton tiene productos nevares-->
+            <Image Source="tieneproductosnevares.png" Scale="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="btnTieneproductos"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
 
-            <Switch IsToggled="False" HorizontalOptions="Center"/>
+            <!-- Boton otros productos-->
+            <Image Source="otrosproductos.png" Scale="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="btnTieneproductos"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
 
-            <Label Text="Otros productos" HorizontalOptions="Center"/>
+            <!-- Boton Mejoras-->
+            <Image Source="mejoras.png" Scale="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="btnMejoras"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <!-- Boton Finalizar-->
+            <Button Text="FINALIZAR"  Margin="10" TextColor="White" FontAttributes="Bold" BackgroundColor="#2c353e"/>
             
-            <Button Text="Mejoras" HorizontalOptions="Center" Clicked="btnMejoras"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
